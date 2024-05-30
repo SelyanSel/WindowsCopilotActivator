@@ -13,9 +13,9 @@ using System.Windows.Forms;
 
 namespace CopilotActivator
 {
-    public partial class CopilotActivator : Form
+    public partial class LegacyCopilotActivator : Form
     {
-        public CopilotActivator()
+        public LegacyCopilotActivator()
         {
             InitializeComponent();
         }

@@ -1,6 +1,7 @@
 ﻿using Microsoft.Win32;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
@@ -10,11 +11,8 @@ namespace CopilotActivator
 {
     internal static class Program
     {
-        /// <summary>
-        /// Point d'entrée principal de l'application.
-        /// </summary>
-        [STAThread]
-        static void Main(string[] args)
+
+        static void LegacyStartupProgram(string[] args)
         {
             try
             {
@@ -38,14 +36,48 @@ namespace CopilotActivator
                 {
                     Application.EnableVisualStyles();
                     Application.SetCompatibleTextRenderingDefault(false);
-                    Application.Run(new CopilotActivator());
+                    Application.Run(new Copilot());
                 }
             }
             catch
             {
                 Application.EnableVisualStyles();
                 Application.SetCompatibleTextRenderingDefault(false);
-                Application.Run(new CopilotActivator());
+                Application.Run(new Copilot());
+            }
+        }
+
+        /// <summary>
+        /// Point d'entrée principal de l'application.
+        /// </summary>
+        [STAThread]
+        static void Main(string[] args)
+        {
+            Process[] pdetect = Process.GetProcessesByName("CopilotActivator");
+
+            if (pdetect.Length == 1)
+            {
+                Application.EnableVisualStyles();
+                Application.SetCompatibleTextRenderingDefault(false);
+                Application.Run(new Copilot());
+            }
+            else
+            {
+                RegistryKey key = Registry.CurrentUser.OpenSubKey(@"Software\Microsoft\Windows\Shell\Copilot\BingChat", true);
+
+                if (key != null)
+                {
+                    key.SetValue("IsUserEligible", 1, RegistryValueKind.DWord);
+                }
+                else
+                {
+                    MessageBox.Show("Your computer is incompatible. Make sure to have the latest windows version," +
+                                    " and check for the latest updates on the github.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+
+                Process.Start(@"microsoft-edge:///?ux=copilot&tcp=1&source=taskbar");
+
+                Application.Exit();
             }
         }
     }

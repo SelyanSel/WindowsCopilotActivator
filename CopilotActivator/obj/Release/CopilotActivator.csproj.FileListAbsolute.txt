@@ -1,0 +1,12 @@
+C:\dev\CopilotActivator\CopilotActivator\bin\Release\CopilotActivator.exe.config
+C:\dev\CopilotActivator\CopilotActivator\bin\Release\CopilotActivator.exe
+C:\dev\CopilotActivator\CopilotActivator\bin\Release\CopilotActivator.pdb
+C:\dev\CopilotActivator\CopilotActivator\obj\Release\CopilotActivator.csproj.AssemblyReference.cache
+C:\dev\CopilotActivator\CopilotActivator\obj\Release\CopilotActivator.csproj.SuggestedBindingRedirects.cache
+C:\dev\CopilotActivator\CopilotActivator\obj\Release\CopilotActivator.Properties.Resources.resources
+C:\dev\CopilotActivator\CopilotActivator\obj\Release\CopilotActivator.csproj.GenerateResource.cache
+C:\dev\CopilotActivator\CopilotActivator\obj\Release\CopilotActivator.csproj.CoreCompileInputs.cache
+C:\dev\CopilotActivator\CopilotActivator\obj\Release\CopilotActivator.exe
+C:\dev\CopilotActivator\CopilotActivator\obj\Release\CopilotActivator.pdb
+C:\dev\CopilotActivator\CopilotActivator\obj\Release\CopilotActivator.Copilot.resources
+C:\dev\CopilotActivator\CopilotActivator\obj\Release\CopilotActivator.LegacyCopilotActivator.resources
