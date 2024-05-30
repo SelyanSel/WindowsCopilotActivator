@@ -1,0 +1,11 @@
+C:\dev\CopilotActivator\CopilotActivator\bin\Debug\CopilotActivator.exe.config
+C:\dev\CopilotActivator\CopilotActivator\bin\Debug\CopilotActivator.exe
+C:\dev\CopilotActivator\CopilotActivator\bin\Debug\CopilotActivator.pdb
+C:\dev\CopilotActivator\CopilotActivator\obj\Debug\CopilotActivator.csproj.AssemblyReference.cache
+C:\dev\CopilotActivator\CopilotActivator\obj\Debug\CopilotActivator.csproj.SuggestedBindingRedirects.cache
+C:\dev\CopilotActivator\CopilotActivator\obj\Debug\CopilotActivator.Form1.resources
+C:\dev\CopilotActivator\CopilotActivator\obj\Debug\CopilotActivator.Properties.Resources.resources
+C:\dev\CopilotActivator\CopilotActivator\obj\Debug\CopilotActivator.csproj.GenerateResource.cache
+C:\dev\CopilotActivator\CopilotActivator\obj\Debug\CopilotActivator.csproj.CoreCompileInputs.cache
+C:\dev\CopilotActivator\CopilotActivator\obj\Debug\CopilotActivator.exe
+C:\dev\CopilotActivator\CopilotActivator\obj\Debug\CopilotActivator.pdb
