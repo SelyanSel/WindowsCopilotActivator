@@ -57,9 +57,9 @@
             this.label2.Location = new System.Drawing.Point(134, 76);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(61, 17);
+            this.label2.Size = new System.Drawing.Size(81, 17);
             this.label2.TabIndex = 3;
-            this.label2.Text = "version 2";
+            this.label2.Text = "version 2.0.1";
             // 
             // label1
             // 
