@@ -6,7 +6,7 @@
 <h3 align="center">Windows Copilot Activator</h3>
 
   <p align="center">
-    Easily activate Windows Copilot on European Windows.
+    Easily activate Windows Copilot on Europeean Windows.
     <br />
     <br />
     <a href="https://github.com/SelyanSel/WindowsCopilotActivator/issues/new?labels=bug&template=bug-report---.md">Report Bug</a>
