@@ -36,13 +36,25 @@ You can also build from source.
 
 1. Download the latest release [here](https://github.com/SelyanSel/WindowsCopilotActivator/releases/latest)
 2. Launch the application
-3. Press ACTIVATE
-4. You now have a shorcut on your desktop! Just launch it and copilot should pop.
+3. Pin the app in your taskbar (right click on the Copilot icon in your taskbar, then pin)
+
+Installation is done!
+
+## Usage
+
+To use Copilot, once pinned to taskbar, it is fairly simple.
+
+1. Launch the app by the taskbar the first time.
+2. Press Activate Copilot
+3. The app should close. Now, when you press on the Copilot logo in your taskbar, Copilot should pop up!
+
+To close the app, go into your Icon Tray in your taskbar, double click on the copilot logo and press Disable copilot.
 
 <!-- ROADMAP -->
 ## Roadmap
 
 - [ ] Activate on startup
+- [x] Taskbar support
 
 See the [open issues](https://github.com/SelyanSel/WindowsCopilotActivator/issues) for a full list of proposed features (and known issues).
 
