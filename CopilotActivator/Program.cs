@@ -18,11 +18,11 @@ namespace CopilotActivator
             {
                 if (args[0] == "--quickstart")
                 {
-                    RegistryKey key = Registry.CurrentUser.OpenSubKey(@"Software\Microsoft\Windows\Shell\Copilot\BingChat", true);
+                    RegistryKey UserEligibleKey = Registry.CurrentUser.OpenSubKey(@"Software\Microsoft\Windows\Shell\Copilot\BingChat", true);
 
-                    if (key != null)
+                    if (UserEligibleKey != null)
                     {
-                        key.SetValue("IsUserEligible", 1, RegistryValueKind.DWord);
+                        UserEligibleKey.SetValue("IsUserEligible", 1, RegistryValueKind.DWord);
                     }
                     else
                     {
@@ -63,11 +63,13 @@ namespace CopilotActivator
             }
             else
             {
-                RegistryKey key = Registry.CurrentUser.OpenSubKey(@"Software\Microsoft\Windows\Shell\Copilot\BingChat", true);
+                RegistryKey UserEligibleKey = Registry.CurrentUser.OpenSubKey(@"Software\Microsoft\Windows\Shell\Copilot\BingChat", true);
 
-                if (key != null)
+                RegistryKey CopilotEnabled = Registry.CurrentUser.OpenSubKey(@"Software\Microsoft\Windows\Shell\Copilot\", true);
+
+                if (UserEligibleKey != null)
                 {
-                    key.SetValue("IsUserEligible", 1, RegistryValueKind.DWord);
+                    UserEligibleKey.SetValue("IsUserEligible", 1, RegistryValueKind.DWord);
                 }
                 else
                 {
@@ -75,7 +77,17 @@ namespace CopilotActivator
                                     " and check for the latest updates on the github.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
 
-                Process.Start(@"microsoft-edge:///?ux=copilot&tcp=1&source=taskbar");
+                if (CopilotEnabled != null)
+                {
+                    CopilotEnabled.SetValue("IsCopilotAvailable", 1, RegistryValueKind.DWord);
+                }
+                else
+                {
+                    MessageBox.Show("Your computer is incompatible. Make sure to have the latest windows version," +
+                                    " and check for the latest updates on the github.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+
+                System.Diagnostics.Process.Start(@"microsoft-edge:///?ux=copilot&tcp=1&source=taskbar");
 
                 Application.Exit();
             }
