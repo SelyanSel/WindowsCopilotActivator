@@ -22,6 +22,8 @@
 
 Was tired of going into registery editor and manually activate copilot each time i wanna use it. So i made this quick and easy tool to use copilot with just a shortcut on your desktop.
 
+## 🟨 MAY NOT WORK :: SEPTEMBER 2024 (Working on update)
+
 <!-- GETTING STARTED -->
 ## Getting Started
 
